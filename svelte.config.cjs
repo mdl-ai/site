@@ -1,5 +1,6 @@
 const sveltePreprocess = require("svelte-preprocess");
 const netlify = require('@sveltejs/adapter-netlify');
+const static = require('@sveltejs/adapter-static');
 const pkg = require('./package.json');
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -17,7 +18,7 @@ module.exports = {
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
 		adapter: {
-			adapt: netlify
+			adapt: static
 		},
 
 		// hydrate the <div id="svelte"> element in src/app.html
