@@ -7,13 +7,13 @@
 	export let repo;
 </script>
 
-<li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+<li class="col-span-1 card-color rounded-lg shadow divide-y divide-gray-200">
 	<div class="w-full flex items-center justify-between p-6 space-x-6">
 		<div class="flex-1 truncate">
 			<div class="flex items-center space-x-3">
-				<h3 class="text-gray-900 text-sm font-medium truncate">{named}</h3>
+				<h3 class="text-color text-sm font-medium truncate">{named}</h3>
 			</div>
-			<p class="mt-1 text-gray-500 text-sm truncate">{type}</p>
+			<p class="mt-1 text-color text-sm truncate">{type}</p>
 		</div>
 		<img class="w-10 h-10 object-contain" src={logo} alt="" />
 	</div>
@@ -23,10 +23,10 @@
 				<a
 					href={website}
 					target="_blank"
-					class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+					class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-color font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
 				>
 					<svg
-						class="w-5 h-5 text-gray-400"
+						class="w-5 h-5 text-color"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
@@ -46,10 +46,10 @@
 				<a
 					href={repo}
 					target="_blank"
-					class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
+					class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-color font-medium border border-transparent rounded-br-lg hover:text-gray-500"
 				>
 					<svg
-						class="w-5 h-5 text-gray-400"
+						class="w-5 h-5 text-color"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"

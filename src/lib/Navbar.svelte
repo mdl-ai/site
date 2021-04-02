@@ -5,11 +5,11 @@
 	import Adjust from './../svg/Adjust.svelte';
 </script>
 
-<div class="relative z-10 flex flex-shrink-0 h-16 bg-white shadow">
+<div class="relative z-10 flex flex-shrink-0 h-16 bg-color shadow">
 	<button
 		on:click={() => ($display.sidebar = !display.side)}
 		type="button"
-		class="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
+		class="px-4 text-color border-r border-gray-200 dark:border-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
 	>
 		<span class="sr-only">Open sidebar</span>
 		<!-- Heroicon name: outline/menu-alt-2 -->
@@ -29,11 +29,12 @@
 			/>
 		</svg>
 	</button>
+
 	<div class="flex justify-between flex-1 px-4">
 		<div class="flex flex-1" />
 		<div class="flex items-center ml-4 md:ml-6">
-			<button class="navbar-btn">
-				<span class="pr-3">Dark Mode</span>
+			<button class="navbar-btn" on:click={() => ($display.dark = !$display.dark)}>
+				<span class="pr-3 text-color">Dark Mode</span>
 				<Adjust />
 			</button>
 
@@ -48,7 +49,7 @@
 						aria-haspopup="true"
 						on:click={() => ($display.profile = !$display.profile)}
 					>
-						<span class="mr-2">Login</span>
+						<span class="mr-2 text-color">Login</span>
 						<Id />
 					</button>
 				</div>
@@ -65,15 +66,13 @@
             -->
 				{#if $display.profile}
 					<div
-						class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+						class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-color rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
 						role="menu"
 						aria-orientation="vertical"
 						aria-labelledby="user-menu"
 					>
-						<a
-							href="#"
-							class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-							role="menuitem">Coming soon..</a
+						<a href="#" class="block px-4 py-2 text-sm bg-color text-color" role="menuitem"
+							>Coming soon..</a
 						>
 					</div>
 				{/if}

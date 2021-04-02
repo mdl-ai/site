@@ -8,10 +8,10 @@
 
     
     .fa-primary {
-        @apply text-indigo-400 fill-current dark:text-blue-700;
+        @apply text-indigo-400 fill-current dark:text-indigo-500;
     }
     .fa-secondary {
-        @apply text-indigo-500 fill-current dark:text-gray-700 ;
+        @apply text-indigo-500 fill-current dark:text-indigo-400 ;
     }
     .sidebar-icon {
         @apply w-6 h-6 mr-3 ;
@@ -24,5 +24,14 @@
 	}
     .navbar-btn {
         @apply flex items-center text-gray-400 focus:outline-none hover:text-gray-500;
+    }
+    .text-color { 
+       @apply text-gray-300 dark:text-gray-700 
+    }
+    .bg-color { 
+       @apply bg-gray-700 dark:bg-gray-300 
+    }
+    .card-color {
+        @apply bg-gray-800 dark:bg-gray-200
     }
 }

@@ -4,7 +4,7 @@
 
 <div>
 	<p class="m-8 text-gray-700 text-center">
-		<span>Technologies for highly performant AI web apps that scale</span>
+		<span class="text-color">Technologies for highly performant AI web apps that scale</span>
 	</p>
 	<ul class="grid m-4 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 		<Card

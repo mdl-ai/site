@@ -1,0 +1,3 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+	<h1 class="text-2xl font-semibold text-color">...Coming soon</h1>
+</div>
