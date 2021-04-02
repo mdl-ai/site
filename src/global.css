@@ -8,10 +8,10 @@
 
     
     .fa-primary {
-        @apply text-indigo-400 fill-current dark:text-indigo-500;
+        @apply text-indigo-400 fill-current;
     }
     .fa-secondary {
-        @apply text-indigo-500 fill-current dark:text-indigo-400 ;
+        @apply text-indigo-500 fill-current;
     }
     .sidebar-icon {
         @apply w-6 h-6 mx-2;
