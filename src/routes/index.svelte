@@ -11,9 +11,9 @@
 <body class:dark={$display.dark === true}>
 	<div class="h-screen flex overflow-hidden bg-color">
 		<!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-		{#if $display.sidebar}
+		<!-- {#if $display.sidebar}
 			<OffCanvas />
-		{/if}
+		{/if} -->
 		<!-- Static sidebar for desktop -->
 		<Sidebar />
 		<div class="flex flex-col w-0 flex-1 overflow-hidden">

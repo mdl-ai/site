@@ -14,7 +14,7 @@
         @apply text-indigo-500 fill-current dark:text-indigo-400 ;
     }
     .sidebar-icon {
-        @apply w-6 h-6 mr-3 ;
+        @apply w-6 h-6 mx-2;
     }
 	.btn {
 		@apply flex items-center w-full px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600 focus:outline-none;

@@ -7,7 +7,7 @@
 	export let repo;
 </script>
 
-<li class="col-span-1 card-color rounded-lg shadow divide-y divide-gray-200">
+<li class="col-span-1 card-color rounded-lg shadow divide-y divide-gray-300">
 	<div class="w-full flex items-center justify-between p-6 space-x-6">
 		<div class="flex-1 truncate">
 			<div class="flex items-center space-x-3">
@@ -18,7 +18,7 @@
 		<img class="w-10 h-10 object-contain" src={logo} alt="" />
 	</div>
 	<div>
-		<div class="-mt-px flex divide-x divide-gray-200">
+		<div class="-mt-px flex divide-x divide-gray-300">
 			<div class="w-0 flex-1 flex">
 				<a
 					href={website}

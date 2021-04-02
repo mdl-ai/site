@@ -1,4 +1,5 @@
 <script>
+	import Sidebar from './Sidebar.svelte';
 	import Stack from '../svg/Stack.svelte';
 	import Branch from './../svg/Branch.svelte';
 	import Home from './../svg/Home.svelte';
@@ -39,7 +40,7 @@
           From: "opacity-100"
           To: "opacity-0"
       -->
-		<div class="absolute top-0 right-0 -mr-12 pt-2">
+		<!-- <div class="absolute top-0 right-0 -mr-12 pt-2">
 			<button
 				on:click={() => {
 					$display.sidebar = !$display.sidebar;
@@ -48,7 +49,6 @@
 				class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
 			>
 				<span class="sr-only">Close sidebar</span>
-				<!-- Heroicon name: outline/x -->
 				<svg
 					class="h-6 w-6 text-white"
 					xmlns="http://www.w3.org/2000/svg"
@@ -64,44 +64,11 @@
 						d="M6 18L18 6M6 6l12 12"
 					/>
 				</svg>
-			</button>
-		</div>
-
-		<div class="flex-shrink-0 flex items-center px-4">
-			<img
-				class="h-8 w-auto"
-				src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg"
-				alt="Workflow"
-			/>
-		</div>
-		<div class="mt-5 flex-1 h-0 overflow-y-auto">
-			<nav class="flex-1 px-2 space-y-1">
-				<button
-					on:click={() => ($display.main = 'home')}
-					class={$display.main === 'home' ? 'selected' : 'btn'}
-				>
-					<Home />
-					Home
-				</button>
-				<button
-					on:click={() => ($display.main = 'models')}
-					class={$display.main === 'models' ? 'selected' : 'btn'}
-				>
-					<Branch />
-					Models
-				</button>
-				<button
-					on:click={() => ($display.main = 'tech')}
-					class={$display.main === 'tech' ? 'selected' : 'btn'}
-				>
-					<Stack />
-					Technologies
-				</button>
-			</nav>
-		</div>
-	</div>
-
-	<div class="flex-shrink-0 w-14" aria-hidden="true">
-		<!-- Dummy element to force sidebar to shrink to fit close icon -->
+			</button> -->
+		<Sidebar />
 	</div>
 </div>
+
+<!-- <div class="flex-shrink-0 w-14" aria-hidden="true">
+	</div>
+</div> -->
