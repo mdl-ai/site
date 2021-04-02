@@ -13,6 +13,7 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "*",
 		"@sveltejs/kit": "next",
+		"@tailwindcss/forms": "^0.3.2",
 		"@tailwindcss/jit": "^0.1.1",
 		"autoprefixer": "^10.2.5",
 		"cssnano": "^4.1.10",

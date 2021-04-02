@@ -1,6 +1,8 @@
 const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+	darkMode: 'class',
 	purge: {
 		content: [
 			"./src/**/*.{html,js,svelte,ts}",
@@ -21,5 +23,25 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+  plugins: [
+	require('@tailwindcss/forms'),
+    plugin(function({ addComponents, theme }) {
+      const icons = {
+        '.fa-secondary': {
+          color: theme('colors.gray.700'),
+		  fill: 'currentColor'
+        },
+		// '.fa-primary': {
+        //   color: theme('colors.gray.500'),
+		//   fill: 'currentColor'
+        // },
+		// '.sidebar-icon': {
+        //   color: theme('colors.red.500'),
+		//   fill: 'currentColor',
+        // },
+      }
+
+      addComponents(icons)
+    })
+  ]
 };

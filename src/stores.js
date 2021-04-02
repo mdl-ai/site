@@ -1,5 +1,6 @@
 import { writable } from "svelte/store";
 
-const display = writable({
-  technologies: false,
+export const display = writable({
+  sidebar: false,
+  main: "home"
 });
