@@ -1,4 +1,5 @@
 <script>
+	import { fly } from 'svelte/transition';
 	import Models from '$lib/Models.svelte';
 	import HomePage from './../lib/HomePage.svelte';
 	import Navbar from '$lib/Navbar.svelte';
@@ -9,7 +10,7 @@
 </script>
 
 <body class:dark={$display.dark === true}>
-	<div class="h-screen flex overflow-hidden bg-color">
+	<div class="h-screen flex overflow-hidden bg-color ">
 		<!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
 		<!-- {#if $display.sidebar}
 			<OffCanvas />

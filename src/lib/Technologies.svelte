@@ -22,13 +22,6 @@
 			repo="https://github.com/awsdocs/aws-lambda-developer-guide"
 		/>
 		<Card
-			named="FastAPI"
-			type="Backend Framework"
-			logo="/img/fastapi.png"
-			website="https://fastapi.tiangolo.com"
-			repo="https://github.com/tiangolo/fastapi"
-		/>
-		<Card
 			named="Svelte"
 			type="Javascript Framework"
 			logo="/img/svelte.png"
@@ -50,14 +43,14 @@
 			repo="https://github.com/vitejs/vite"
 		/>
 		<Card
-			named="VS Code"
-			type="Text Editor / IDE"
-			logo="/img/vscode.png"
-			website="https://code.visualstudio.com/"
-			repo="https://github.com/microsoft/vscode"
+			named="AWS Amplify"
+			type="Static Hosting + CI/CD"
+			logo="/img/netlify.png"
+			website="https://www.netlify.com/"
+			repo="https://github.com/netlify"
 		/>
 		<Card
-			named="Netlify"
+			named="AWS API Gateway"
 			type="Hosting + CI/CD"
 			logo="/img/netlify.png"
 			website="https://www.netlify.com/"

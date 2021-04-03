@@ -26,12 +26,12 @@
         @apply flex items-center text-gray-400 focus:outline-none hover:text-gray-500;
     }
     .text-color { 
-       @apply text-gray-300 dark:text-gray-700 
+       @apply text-gray-300 dark:text-gray-700 transition-colors
     }
     .bg-color { 
-       @apply bg-gray-700 dark:bg-gray-300 
+       @apply bg-gray-700 dark:bg-gray-300 transition-colors
     }
     .card-color {
-        @apply bg-gray-800 dark:bg-gray-200
+        @apply bg-gray-800 dark:bg-gray-200 transition-colors
     }
 }
