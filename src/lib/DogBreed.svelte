@@ -91,26 +91,26 @@
 			</button>
 		{:else}
 			{#await fetchBreed}
-				<div
+				<button
 					class="p-4 text-center mt-2 bg-yellow-400 rounded-lg border-gray-400"
 					on:click={predictBreed}
 				>
 					...AI Identifying
-				</div>
+				</button>
 			{:then data}
-				<div
+				<button
 					class="p-4 mt-2 bg-green-400 text-center  rounded-lg border-gray-400"
 					on:click={predictBreed}
 				>
 					{data}
-				</div>
+				</button>
 			{:catch}
-				<div
+				<button
 					class="p-4 mt-2 bg-red-400 text-center  rounded-lg border-gray-400"
 					on:click={predictBreed}
 				>
 					API Error
-				</div>
+				</button>
 			{/await}
 		{/if}
 	</div>
@@ -132,13 +132,12 @@
 		on:change={(e) => onFileSelected(e)}
 		bind:this={fileinput}
 	/>
-	<p class="m-2 text-color">
-		The model was fine tuned for dog breeds from many categories of items.
-	</p>
-	<p class="m-2 text-color">Try uploading images of other things, it remembers a lot!</p>
 </div>
 
 <style>
+	button {
+		@apply text-gray-900;
+	}
 	.fa-primary {
 		@apply text-purple-500 fill-current;
 	}

@@ -21,7 +21,7 @@
 				<div class="py-2 md:pl-8 md:pt-0">
 					<button
 						href="mailto:mdldotai@gmail.com"
-						class="bg-indigo-500 text-gray-800 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
+						class="bg-indigo-500 text-gray-200 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
 						on:click={() => ($display.main = 'models')}
 					>
 						Dog Demo
@@ -30,7 +30,7 @@
 				<div class="pt-6 md:pl-8 md:pt-0">
 					<a
 						href="mailto:mdldotai@gmail.com"
-						class="bg-indigo-500 text-gray-800 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
+						class="bg-indigo-500 text-gray-200 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
 						>Contact us
 					</a>
 				</div>
