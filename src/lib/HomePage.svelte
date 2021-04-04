@@ -11,12 +11,11 @@
 		<div class="flex mt-8 flex-col md:flex-row md:justify-between">
 			<div class="flex flex-col">
 				<p class="w-full text-color">
-					Get your AI web apps to market in record speed using technologies built for scale
+					Get your AI web apps to market now, with technologies built for scale
 				</p>
 				<p class="w-full mt-3 text-color">
-					High performance PWA that runs on Web, Android and IOS from a single codebase
+					High perfmance on web, Android and IOS from a single codebase
 				</p>
-				<p class="w-full mt-3 text-color">No lock in, run your app on any cloud provider</p>
 			</div>
 			<div class="flex flex-col">
 				<div class="py-2 md:pl-8 md:pt-0">

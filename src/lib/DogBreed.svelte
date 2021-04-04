@@ -7,34 +7,44 @@
 	let fetchBreed;
 	let fetchImage;
 	let url;
-	let avatar, fileinput;
+	let fileinput;
+	let lastRequest = 'url';
 
 	const onFileSelected = (e) => {
+		lastRequest = 'base64';
 		let image = e.target.files[0];
 		let reader = new FileReader();
 		reader.readAsDataURL(image);
 		reader.onload = (e) => {
 			fetchImage = e.target.result;
-			fetchBreed = (async () => {
-				console.log(avatar);
-				const response = await fetch(`${$api}breed/`, {
-					method: 'POST',
-					headers: {
-						Accept: 'application/json',
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify({ data: e.target.result })
-				});
-				return await response.json();
-			})();
+			fetchBreed = fetchData('base64');
 		};
 	};
 
+	async function fetchData(type) {
+		let body_json;
+		if (type === 'base64') {
+			body_json = JSON.stringify({ data: fetchImage });
+		} else if (type === 'url') {
+			body_json = JSON.stringify({ url: url.message });
+		}
+
+		const response = await fetch(`${$api}/dog_breed/`, {
+			method: 'POST',
+			headers: {
+				Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+			},
+			body: body_json
+		});
+		return await response.json();
+	}
+
 	function newImage() {
+		lastRequest = 'url';
 		fetchImage = (async () => {
-			console.log('wow cool');
 			const response = await fetch('https://dog.ceo/api/breeds/image/random');
 			url = await response.json();
+			predictBreed();
 			return await preload(url.message);
 		})();
 	}
@@ -54,18 +64,7 @@
 	};
 
 	function predictBreed() {
-		fetchBreed = (async () => {
-			console.log('img_src: ', url);
-			const response = await fetch(`${$api}breed/`, {
-				method: 'POST',
-				headers: {
-					Accept: 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({ url: url.message })
-			});
-			return await response.json();
-		})();
+		fetchBreed = fetchData(lastRequest);
 	}
 </script>
 
@@ -105,8 +104,13 @@
 				>
 					{data}
 				</div>
-			{:catch error}
-				<p>Error running AI: {Error}</p>
+			{:catch}
+				<div
+					class="p-4 mt-2 bg-red-400 text-center  rounded-lg border-gray-400"
+					on:click={predictBreed}
+				>
+					API Error
+				</div>
 			{/await}
 		{/if}
 	</div>
