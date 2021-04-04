@@ -4,7 +4,7 @@
 
 <div class="w-full md:mt-20 flex items-center justify-center bg-color">
 	<div class="md:w-2/3 w-full px-4 text-color flex flex-col">
-		<div class="w-full md:text-7xl text-xl font-bold">
+		<div class="w-full md:text-7xl text-4xl font-bold">
 			<h1 class="w-full md:w-2/3">Rapid Iteration</h1>
 			<h1 class="w-full md:w-2/3">Unlimited Scalability</h1>
 		</div>
