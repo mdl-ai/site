@@ -1,7 +1,11 @@
-import { writable } from "svelte/store";
+import { writable, get } from "svelte/store";
+
 
 export const display = writable({
-  sidebar: false,
+  sidebar: true,
   main: "home",
-  dark: false
+  theme: "light"
 });
+
+
+export const api = writable(import.meta.env.VITE_API);

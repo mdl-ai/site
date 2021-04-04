@@ -33,8 +33,24 @@
 	<div class="flex justify-between flex-1 px-4">
 		<div class="flex flex-1" />
 		<div class="flex items-center ml-4 md:ml-6">
-			<button class="navbar-btn" on:click={() => ($display.dark = !$display.dark)}>
-				<span class="pr-3 text-color">Dark Mode</span>
+			<button
+				class="navbar-btn"
+				on:click={() => {
+					if ($display.theme === 'dark') {
+						$display.theme = 'light';
+						document.body.classList.remove('dark');
+					} else {
+						$display.theme = 'dark';
+						document.body.classList.add('dark');
+					}
+					// localStorage.removeItem('theme')
+				}}
+			>
+				{#if $display.theme === 'dark'}
+					<span class="hidden md:flex pr-3 text-color">Light Mode</span>
+				{:else}
+					<span class="hidden md:flex pr-3 text-color">Dark Mode</span>
+				{/if}
 				<Adjust />
 			</button>
 
@@ -49,7 +65,7 @@
 						aria-haspopup="true"
 						on:click={() => ($display.profile = !$display.profile)}
 					>
-						<span class="mr-2 text-color">Login</span>
+						<span class="hidden md:flex mr-2 text-color">Login</span>
 						<Id />
 					</button>
 				</div>

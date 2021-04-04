@@ -2,13 +2,14 @@
 	"name": "mdlai",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev -p 3001",
 		"build": "svelte-kit build",
 		"start": "svelte-kit start",
 		"lint": "prettier --check . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@rollup/plugin-replace": "^2.4.2",
 		"@sveltejs/adapter-netlify": "*",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "*",

@@ -1,4 +1,5 @@
 <script>
+	import DogSmall from './../svg/DogSmall.svelte';
 	import LogoText from './../svg/LogoText.svelte';
 	import LogoSmall from './../svg/LogoSmall.svelte';
 	import Logo from '../svg/Logo.svelte';
@@ -38,8 +39,8 @@
 							on:click={() => ($display.main = 'models')}
 							class={$display.main === 'models' ? 'selected' : 'btn'}
 						>
-							<Branch />
-							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Models</span>
+							<DogSmall />
+							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Dog Classify</span>
 						</button>
 					</nav>
 				</div>
@@ -71,7 +72,7 @@
 							on:click={() => ($display.main = 'models')}
 							class={$display.main === 'models' ? 'selected' : 'btn'}
 						>
-							<Branch />
+							<DogSmall />
 						</button>
 					</nav>
 				</div>

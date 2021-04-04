@@ -17,7 +17,7 @@
 		<Card
 			named="AWS Lambda"
 			type="Serverless Compute"
-			logo="/img/lambda.png"
+			logo="/svg/lambda.svg"
 			website="https://aws.amazon.com/lambda/"
 			repo="https://github.com/awsdocs/aws-lambda-developer-guide"
 		/>
@@ -31,7 +31,7 @@
 		<Card
 			named="Tailwind"
 			type="CSS Framework"
-			logo="/img/tailwind.png"
+			logo="/svg/tailwind.svg"
 			website="https://tailwindcss.com/"
 			repo="https://github.com/tailwindlabs/tailwindcss"
 		/>
@@ -45,16 +45,9 @@
 		<Card
 			named="AWS Amplify"
 			type="Static Hosting + CI/CD"
-			logo="/img/netlify.png"
-			website="https://www.netlify.com/"
-			repo="https://github.com/netlify"
-		/>
-		<Card
-			named="AWS API Gateway"
-			type="Hosting + CI/CD"
-			logo="/img/netlify.png"
-			website="https://www.netlify.com/"
-			repo="https://github.com/netlify"
+			logo="/svg/amplify.svg"
+			website="https://aws.amazon.com/amplify/"
+			repo="https://github.com/aws-amplify"
 		/>
 	</ul>
 </div>
