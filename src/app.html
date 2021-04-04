@@ -6,8 +6,18 @@
 	<link rel="icon" href="/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="manifest" href="/site.webmanifest">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>mdl.ai</title>
+	<meta name="Machine Deep Learning Artifical Intelligence AI DL ML Model"
+		content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#317EFB" />
+	<title>MDL.AI</title>
+	<script>
+		if ('serviceWorker' in navigator) {
+			// Use the window load event to keep the page load performant
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/src/service-worker.js');
+			});
+		}
+	</script>
 	%svelte.head%
 </head>
 
