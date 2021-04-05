@@ -20,6 +20,11 @@
 						<HomePage />
 					{:else if $display.main === 'models'}
 						<Models />
+					{:else if $display.main === 'lighthouse'}
+						<div class="flex items-center flex-col">
+							<h1 class="text-color">Googles lighthouse tool measures web performance, it doesn't get any better than this!</h1>
+							<img src="/lighthouse.png" class="border-indigo-500 border-4 border-dotted" alt="Lighthouse Perfect Score" />
+						</div>
 					{/if}
 				</div>
 			</main>

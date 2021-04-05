@@ -5,13 +5,12 @@
 <div class="w-full md:mt-20 flex items-center justify-center bg-color">
 	<div class="md:w-2/3 w-full px-4 text-color flex flex-col">
 		<div class="w-full md:text-7xl text-4xl font-bold">
-			<h1 class="w-full md:w-2/3">Rapid Iteration</h1>
-			<h1 class="w-full md:w-2/3">Unlimited Scalability</h1>
+			<h1 class="w-full md:w-2/3">AI Progressive Web Applications</h1>
 		</div>
 		<div class="flex mt-8 flex-col md:flex-row md:justify-between">
 			<div class="flex flex-col">
-				<p class="w-full text-color">Get your AI web apps to market now, with technologies built for scale</p>
-				<p class="w-full mt-3 text-color">High performance PWA that runs on web, Android and IOS from a single codebase</p>
+				<p class="w-full mt-3 text-color">High performance technologies built for scale</p>
+				<p class="w-full mt-3 text-color">Web, Android and iOS from a single codebase</p>
 			</div>
 			<div class="flex flex-col">
 				<div class="py-2 md:pl-8 md:pt-0">

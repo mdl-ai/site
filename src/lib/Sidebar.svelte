@@ -1,4 +1,5 @@
 <script>
+	import Percent from '../svg/Percent.svelte';
 	import DogSmall from './../svg/DogSmall.svelte';
 	import LogoText from './../svg/LogoText.svelte';
 	import LogoSmall from './../svg/LogoSmall.svelte';
@@ -30,6 +31,10 @@
 							<DogSmall />
 							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Dog Classify</span>
 						</button>
+						<button on:click={() => ($display.main = 'lighthouse')} class={$display.main === 'lighthouse' ? 'selected' : 'btn'}>
+							<Percent />
+							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Performance</span>
+						</button>
 					</nav>
 				</div>
 			</div>
@@ -52,6 +57,9 @@
 						</button>
 						<button on:click={() => ($display.main = 'models')} aria-label="Dog Classify" class={$display.main === 'models' ? 'selected' : 'btn'}>
 							<DogSmall />
+						</button>
+						<button on:click={() => ($display.main = 'lighthouse')} aria-label="Site Performance" class={$display.main === 'lighthouse' ? 'selected' : 'btn'}>
+							<Percent />
 						</button>
 					</nav>
 				</div>

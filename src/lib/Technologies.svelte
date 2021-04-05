@@ -16,7 +16,4 @@
 		<Card named="Tailwind" type="CSS Library" logo="/svg/tailwind.svg" website="https://tailwindcss.com/" repo="https://github.com/tailwindlabs/tailwindcss" />
 		<Card named="Vite / Rollup / PostCSS" type="Frontend Build Tools" logo="/img/vite.png" website="https://vitejs.dev/" repo="https://github.com/vitejs/vite" />
 	</ul>
-	<p class="text-center text-color">AWS Lambda runs a Docker image for optimal scalability and cost</p>
-	<p class="text-center text-color">Higher cost option AWS Fargate, removing the 'cold start' if Lambda is idle too long</p>
-	<p class="text-center text-color">Full CI/CD intergration, frontend updates on 'git push', backend updates with 'sam deploy'</p>
 </div>
