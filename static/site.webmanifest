@@ -23,5 +23,6 @@
     ],
     "display": "standalone",
     "start_url": "https://www.mdl.ai",
-    "prefer_related_applications": false
+    "prefer_related_applications": false,
+    "offline_enable": true
 }
