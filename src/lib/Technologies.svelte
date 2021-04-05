@@ -22,6 +22,27 @@
 			repo="https://github.com/awsdocs/aws-lambda-developer-guide"
 		/>
 		<Card
+			named="AWS API Gateway"
+			type="Serverless API"
+			logo="/svg/api-gateway.svg"
+			website="https://aws.amazon.com/api-gateway/"
+			repo="https://github.com/awsdocs/amazon-api-gateway-developer-guide/blob/main/doc_source/api-gateway-create-api-step-by-step.md"
+		/>
+		<Card
+			named="AWS Amplify"
+			type="Static Hosting + CI/CD"
+			logo="/svg/amplify.svg"
+			website="https://aws.amazon.com/amplify/"
+			repo="https://github.com/aws-amplify"
+		/>
+		<Card
+			named="Docker"
+			type="Container Imaging"
+			logo="/svg/docker.svg"
+			website="https://www.docker.com/"
+			repo="https://github.com/docker"
+		/>
+		<Card
 			named="Svelte"
 			type="Javascript Framework"
 			logo="/img/svelte.png"
@@ -41,13 +62,6 @@
 			logo="/img/vite.png"
 			website="https://vitejs.dev/"
 			repo="https://github.com/vitejs/vite"
-		/>
-		<Card
-			named="AWS Amplify"
-			type="Static Hosting + CI/CD"
-			logo="/svg/amplify.svg"
-			website="https://aws.amazon.com/amplify/"
-			repo="https://github.com/aws-amplify"
 		/>
 	</ul>
 	<p class="text-center text-color">
