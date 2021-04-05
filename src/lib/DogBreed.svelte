@@ -70,9 +70,7 @@
 
 <div class="flex flex-col items-center">
 	<div class="text-color">Get a random dog from the internet</div>
-	<button class="my-2 p-4  bg-indigo-400 rounded-lg border-gray-400" on:click={newImage}>
-		New Dog
-	</button>
+	<button class="my-2 p-4  bg-indigo-400 rounded-lg border-gray-400" on:click={newImage}> New Dog </button>
 	{#await fetchImage}
 		<SpinNew />
 		<Dog />
@@ -83,34 +81,16 @@
 	{/await}
 	<div class="flex flex-col items-center">
 		{#if !fetchBreed}
-			<button
-				class="p-4 mt-2 text-center bg-indigo-400 rounded-lg border-gray-400"
-				on:click={predictBreed}
-			>
-				Identify Breed
-			</button>
+			<button class="p-4 mt-2 text-center bg-indigo-400 rounded-lg border-gray-400" on:click={predictBreed}> Identify Breed </button>
 		{:else}
 			{#await fetchBreed}
-				<button
-					class="p-4 text-center mt-2 bg-yellow-400 rounded-lg border-gray-400"
-					on:click={predictBreed}
-				>
-					...AI Identifying
-				</button>
+				<button class="p-4 text-center mt-2 bg-yellow-400 rounded-lg border-gray-400" on:click={predictBreed}> ...AI Identifying </button>
 			{:then data}
-				<button
-					class="p-4 mt-2 bg-green-400 text-center  rounded-lg border-gray-400"
-					on:click={predictBreed}
-				>
+				<button class="p-4 mt-2 bg-green-400 text-center  rounded-lg border-gray-400" on:click={predictBreed}>
 					{data}
 				</button>
 			{:catch}
-				<button
-					class="p-4 mt-2 bg-red-400 text-center  rounded-lg border-gray-400"
-					on:click={predictBreed}
-				>
-					API Error
-				</button>
+				<button class="p-4 mt-2 bg-red-400 text-center  rounded-lg border-gray-400" on:click={predictBreed}> API Error </button>
 			{/await}
 		{/if}
 	</div>
@@ -125,13 +105,7 @@
 		<UploadIcon />
 	</button>
 
-	<input
-		style="display:none"
-		type="file"
-		accept=".jpg, .jpeg, .png"
-		on:change={(e) => onFileSelected(e)}
-		bind:this={fileinput}
-	/>
+	<input style="display:none" type="file" accept=".jpg, .jpeg, .png" on:change={(e) => onFileSelected(e)} bind:this={fileinput} />
 </div>
 
 <style>

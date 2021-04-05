@@ -1,42 +1,12 @@
-# create-svelte
+# MDL.AI Site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+## Purpose
+This is a frontend to interact with my inference models, as I learn how to use new models this site is for putting them into production.
 
-## Creating a project
+## Details
+It is a 100% static website built with SvelteKit which is frontend library currently in beta, this in turn uses Vite which uses Rollup. This toolkit offers the best possible end user experience, scoring 100% on Google's lighthouse tool, while also being extremely productive for development, as the hot reload updates in milliseconds.
 
-If you're seeing this, you've probably already done this step. Congrats!
+It is being hosted on AWS Amplify for convienience, but can be hosted on any provider as it simply calls the AWS API Gateway which can be called from anywhere.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Svelte apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, add it to the `devDependencies` in `package.json` making sure to specify the version as `next` and update your `svelte.config.cjs` to [specify your chosen adapter](https://kit.svelte.dev/docs#configuration-adapter). The following official adapters are available:
-
-- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
-- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
-- [@sveltejs/adapter-vercel](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel)
-- ...more soon
-
-[See the adapter documentation for more detail](https://kit.svelte.dev/docs#adapters)
+## Formatting
+I use auto formatting on all of my code for higher productivity, yapf for Python, clangd for C++ and prettier for html/js/css. While I use a line width of 100 for Python and C++, for html I prefer 500 to keep each element on a single line.

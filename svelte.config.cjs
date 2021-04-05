@@ -1,7 +1,7 @@
 const sveltePreprocess = require("svelte-preprocess");
-const netlify = require('@sveltejs/adapter-netlify');
 const static = require('@sveltejs/adapter-static');
 const pkg = require('./package.json');
+import { VitePWA } from 'vite-plugin-pwa'
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -14,17 +14,14 @@ module.exports = {
 		}),
 	],
 	kit: {
-		// By default, `npm run build` will create a standard Node app.
-		// You can create optimized builds for different platforms by
-		// specifying a different adapter
 		adapter: {
 			adapt: static
 		},
-
-		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-
 		vite: {
+			plugines: [
+				VitePWA()
+			],
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			},

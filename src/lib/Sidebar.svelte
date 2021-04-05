@@ -2,13 +2,10 @@
 	import DogSmall from './../svg/DogSmall.svelte';
 	import LogoText from './../svg/LogoText.svelte';
 	import LogoSmall from './../svg/LogoSmall.svelte';
-	import Logo from '../svg/Logo.svelte';
-	import Logo2 from '../svg/Logo2.svelte';
-	import Branch from './../svg/Branch.svelte';
 	import Home from './../svg/Home.svelte';
 	import Stack from '../svg/Stack.svelte';
 	import { display } from '../stores.js';
-	import { fly, fade, scale, draw } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 </script>
 
 {#if $display.sidebar}
@@ -21,24 +18,15 @@
 						<LogoText />
 					</div>
 					<nav class="flex-1 px-2 space-y-1">
-						<button
-							on:click={() => ($display.main = 'home')}
-							class={$display.main === 'home' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'home')} class={$display.main === 'home' ? 'selected' : 'btn'}>
 							<Home />
 							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Home</span>
 						</button>
-						<button
-							on:click={() => ($display.main = 'tech')}
-							class={$display.main === 'tech' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'tech')} class={$display.main === 'tech' ? 'selected' : 'btn'}>
 							<Stack />
 							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Technologies</span>
 						</button>
-						<button
-							on:click={() => ($display.main = 'models')}
-							class={$display.main === 'models' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'models')} class={$display.main === 'models' ? 'selected' : 'btn'}>
 							<DogSmall />
 							<span in:fly={{ x: 250, opacity: 1, duration: 300 }}>Dog Classify</span>
 						</button>
@@ -56,22 +44,13 @@
 						<LogoSmall />
 					</div>
 					<nav class="px-2 space-y-1">
-						<button
-							on:click={() => ($display.main = 'home')}
-							class={$display.main === 'home' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'home')} class={$display.main === 'home' ? 'selected' : 'btn'}>
 							<Home />
 						</button>
-						<button
-							on:click={() => ($display.main = 'tech')}
-							class={$display.main === 'tech' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'tech')} class={$display.main === 'tech' ? 'selected' : 'btn'}>
 							<Stack />
 						</button>
-						<button
-							on:click={() => ($display.main = 'models')}
-							class={$display.main === 'models' ? 'selected' : 'btn'}
-						>
+						<button on:click={() => ($display.main = 'models')} class={$display.main === 'models' ? 'selected' : 'btn'}>
 							<DogSmall />
 						</button>
 					</nav>
