@@ -1,7 +1,7 @@
 const sveltePreprocess = require("svelte-preprocess");
 const static = require('@sveltejs/adapter-static');
 const pkg = require('./package.json');
-import { VitePWA } from 'vite-plugin-pwa'
+// const {VitePWA} = require('vite-plugin-pwa');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -19,9 +19,9 @@ module.exports = {
 		},
 		target: '#svelte',
 		vite: {
-			plugines: [
-				VitePWA()
-			],
+			// plugins: [
+			// 	VitePWA()
+			// ],
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			},
