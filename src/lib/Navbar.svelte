@@ -16,6 +16,7 @@
 		<div class="flex flex-1" />
 		<div class="flex items-center ml-4 md:ml-6">
 			<button
+				aria-label="Change Dark Mode"
 				class="navbar-btn"
 				on:click={() => {
 					if ($display.theme === 'dark') {
@@ -36,7 +37,7 @@
 			</button>
 			<div class="relative ml-3">
 				<div>
-					<button type="button" class="navbar-btn" id="user-menu" aria-expanded="false" aria-haspopup="true" on:click={() => ($display.profile = !$display.profile)}>
+					<button aria-label="Login to Profile" type="button" class="navbar-btn" id="user-menu" aria-expanded="false" aria-haspopup="true" on:click={() => ($display.profile = !$display.profile)}>
 						<span class="hidden md:flex mr-2 text-color">Login</span>
 						<Id />
 					</button>

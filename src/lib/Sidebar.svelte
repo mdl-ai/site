@@ -44,13 +44,13 @@
 						<LogoSmall />
 					</div>
 					<nav class="px-2 space-y-1">
-						<button on:click={() => ($display.main = 'home')} class={$display.main === 'home' ? 'selected' : 'btn'}>
+						<button on:click={() => ($display.main = 'home')} aria-label="Home" class={$display.main === 'home' ? 'selected' : 'btn'}>
 							<Home />
 						</button>
-						<button on:click={() => ($display.main = 'tech')} class={$display.main === 'tech' ? 'selected' : 'btn'}>
+						<button on:click={() => ($display.main = 'tech')} aria-label="Stack" class={$display.main === 'tech' ? 'selected' : 'btn'}>
 							<Stack />
 						</button>
-						<button on:click={() => ($display.main = 'models')} class={$display.main === 'models' ? 'selected' : 'btn'}>
+						<button on:click={() => ($display.main = 'models')} aria-label="Dog Classify" class={$display.main === 'models' ? 'selected' : 'btn'}>
 							<DogSmall />
 						</button>
 					</nav>
