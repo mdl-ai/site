@@ -24,6 +24,20 @@
 			// Optionally, send analytics event that PWA install promo was shown.
 			console.log(`'beforeinstallprompt' event was fired.`);
 		});
+
+		self.addEventListener('fetch', function (event) {
+			event.respondWith(async function () {
+				try {
+					var res = await fetch(event.request);
+					var cache = await caches.open('cache');
+					cache.put(event.request.url, res.clone());
+					return res;
+				}
+				catch (error) {
+					return caches.match(event.request);
+				}
+			}());
+		});
 	</script>
 	%svelte.head%
 </head>
