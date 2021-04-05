@@ -14,7 +14,7 @@
 					Get your AI web apps to market now, with technologies built for scale
 				</p>
 				<p class="w-full mt-3 text-color">
-					High perfmance on web, Android and IOS from a single codebase
+					High performance PWA that runs on web, Android and IOS from a single codebase
 				</p>
 			</div>
 			<div class="flex flex-col">
@@ -24,14 +24,14 @@
 						class="bg-indigo-500 text-gray-200 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
 						on:click={() => ($display.main = 'models')}
 					>
-						Dog Demo
+						Demo
 					</button>
 				</div>
 				<div class="pt-6 md:pl-8 md:pt-0">
 					<a
 						href="mailto:mdldotai@gmail.com"
 						class="bg-indigo-500 text-gray-200 justify-center text-center rounded-lg md:flex shadow px-4 py-3 items-center"
-						>Contact us
+						>Contact
 					</a>
 				</div>
 			</div>

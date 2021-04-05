@@ -4,7 +4,7 @@
 
 <div>
 	<p class="m-8 text-gray-700 text-center">
-		<span class="text-color">Technologies for highly performant AI web apps that scale</span>
+		<span class="text-color">Technologies used to build this app</span>
 	</p>
 	<ul class="grid m-4 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 		<Card
@@ -50,4 +50,13 @@
 			repo="https://github.com/aws-amplify"
 		/>
 	</ul>
+	<p class="text-center text-color">
+		AWS Lambda runs a Docker image for optimal scalability and cost
+	</p>
+	<p class="text-center text-color">
+		Higher cost option AWS Fargate, removing the 'cold start' if Lambda is idle too long
+	</p>
+	<p class="text-center text-color">
+		Full CI/CD intergration, frontend updates on 'git push', backend updates with 'sam deploy'
+	</p>
 </div>
