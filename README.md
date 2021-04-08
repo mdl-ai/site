@@ -1,7 +1,7 @@
 # MDL.AI Site
 
 ## Purpose
-This is a frontend to put AI inference models into production
+This is a open source frontend to put AI inference models into production, it is intended to be used as a learning resource for what I consider the most perfomant and productive way for individuals to create UI's for their machine learning projects, that runs accros iOS, Android and Web by taking advantage of PWA's.
 
 ## Details
 It is a 100% static website built with SvelteKit which is framework currently in beta, this in turn uses Vite which uses Rollup. This toolkit offers the best possible end user experience, scoring 100% on Google's lighthouse tool, while also being extremely productive for development, as the hot reload updates in milliseconds.
